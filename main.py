@@ -61,20 +61,11 @@ def check_nan(tensor, name="Tensor"):
 
 
 def load_adjacency_list_data(adj_mat):
-    """
-    从 scipy 的稀疏矩阵格式中提取邻接列表数据
-    参数:
-    - adj_mat: scipy.sparse 的一个矩阵对象，通常是 COO 格式
-
-    返回:
-    - all_h_list: 每个非零元素的行索引列表
-    - all_t_list: 每个非零元素的列索引列表
-    - all_v_list: 每个非零元素的值列表
-    """
-    coo_mat = adj_mat.tocoo()  # 确保矩阵是 COO 格式
-    all_h_list = list(coo_mat.row)  # 行索引
-    all_t_list = list(coo_mat.col)  # 列索引
-    all_v_list = list(coo_mat.data)  # 矩阵非零元素的数据
+   
+    coo_mat = adj_mat.tocoo()  
+    all_h_list = list(coo_mat.row)  
+    all_t_list = list(coo_mat.col)  
+    all_v_list = list(coo_mat.data)  
     return all_h_list, all_t_list, all_v_list
 
 # def init_seed(seed, reproducibility):
