@@ -42,7 +42,7 @@ def init_seed(seed, reproducibility=True):
         torch.backends.cudnn.deterministic = False
         torch.backends.cudnn.benchmark = True
 
-seed = 42  # 可以是任何数字，确保每次运行都使用同一个种子
+seed = 42 
 init_seed(seed)
 
 # Function to check NaN and Inf
