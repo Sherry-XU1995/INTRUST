@@ -1,5 +1,5 @@
-# IHTE
-##### This repository contains the code for Intent-based Hypergraph for Trust Evaluation.
+# INTRUST
+##### This repository contains the code for Intent-based Trust Evaluation.
 
 ## Requirements
 ##### numpy == 1.24.4
